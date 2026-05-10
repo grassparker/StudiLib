@@ -5,7 +5,7 @@ function App() {
     <>
       <section id="center">
         <div>
-          <h1>Studilib is changing.  Studilib 正在改变。</h1>
+          <h1>Studilib is changing./ Studilib 正在改变。</h1>
           <p>We're rebuilding from the ground up with a new vision.</p>
           <p>我们正在以全新的理念重新构建。</p>
         </div>
