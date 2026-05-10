@@ -1,4 +1,5 @@
 import './App.css'
+import { GoogleGenAI } from "@google/genai";
 
 function App() {
   return (
