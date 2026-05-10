@@ -1,115 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
         <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
+          <h1>Studilib is changing. / Studilib 正在改变。</h1>
+          <p>We're rebuilding from the ground up with a new vision.</p>
+          <p>我们正在以全新的理念重新构建。</p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
       </section>
 
       <div className="ticks"></div>
 
       <section id="next-steps">
         <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+          <h2>What's coming / 即将推出</h2>
           <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
+            <li>📥 Dump your tasks for the week, no structure needed / 随意输入本周任务，无需整理</li>
+            <li>🤖 AI quietly plans your days in the background / AI 在后台悄悄为你规划每一天</li>
+            <li>🌅 Every morning, a gentle suggestion — not a mandate / 每天早上，温柔的建议，而不是命令</li>
+            <li>😴 Grind day? Chill day? YouTube day? We adapt. / 拼命日？放松日？YouTube日？我们都能适应。</li>
+            <li>🌿 Stuck too long? We'll tell you to touch grass. / 卡太久了？我们会提醒你去透透气。</li>
+            <li>🧠 In flow? We leave you alone. / 进入状态了？我们不打扰你。</li>
           </ul>
         </div>
+
         <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+          <h2>The idea / 核心理念</h2>
+          <p>
+            Most productivity apps are built for your best days. Studilib is built for every day — the weird ones, the slow ones, the ones where you just want to draw something.
+          </p>
+          <p>
+            大多数生产力应用是为你状态最好的日子设计的。Studilib 为每一天而生——那些奇怪的日子、缓慢的日子、只想画点东西的日子。
+          </p>
+          <br />
+          <a href="https://github.com/grassparker/StudiLib" target="_blank">
+            Follow development on GitHub / 在 GitHub 上关注开发进度 →
+          </a>
         </div>
       </section>
 

@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Studilib
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Studilib is being rebuilt from the ground up.
 
-Currently, two official plugins are available:
+The old version did what every other app already does — pomodoro, tasks, timers. We're done with that.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## What's coming
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Most productivity apps are built for your best days. Studilib is built for every day — the grinding days, the chill days, the YouTube days, the days where you just want to draw something.
 
-## Expanding the ESLint configuration
+**The core loop:**
+- Dump all your tasks for the week, no structure needed
+- AI quietly plans your days in the background
+- Every morning you get a gentle suggestion — not a mandate
+- Tell it you're having a chill day, tasks adjust, no guilt
+- It learns how *you* actually work over time
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**The touch grass feature:**
+- Stuck on something way longer than usual? It nudges you to take a break
+- In flow and naturally grinding? It leaves you alone
+- It learns the difference between stuck and cooking
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Day modes:**
+- Grind day → full focus mode
+- Chill day → just one small thing, that's enough
+- YouTube day → protect 2 hours for something meaningful, the rest is yours
+- Create day → no tasks, go make something
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## The idea
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+No rigid methods. No guilt for off days. No drill sergeant AI.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Just an app that meets you where you actually are, not where you're supposed to be.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Stack
+
+- React + TypeScript + Vite
+- Tailwind CSS
+- Gemini AI
+- i18n (English / Chinese)
+
+---
+
+## Status
+
+🚧 Currently rebuilding. Follow along or contribute.
+
+---
+
+## Contributing
+
+Open source and open to ideas. Feel free to open an issue or PR.
+
+---
+
+© 2026 Candy // Studilib
