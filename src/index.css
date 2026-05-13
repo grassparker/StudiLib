@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap');
+@import "tailwindcss";
+
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
+  --text: #000d3d;
+  --text-h: #000d3d;
+  --bg: linear-gradient(to bottom, #f5f3ff, #ede9fe, #ddd6fe, #c4b5fd);
+  --border: #ddd6fe;
+  --code-bg: #f5f3ff;
+  --accent: #7c3aed;
+  --accent-bg: rgba(124, 58, 237, 0.1);
+  --accent-border: rgba(124, 58, 237, 0.3);
+  --social-bg: rgba(245, 243, 255, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Lora', system-ui, serif;
+  --heading: 'Lora', system-ui, serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -32,9 +35,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
+    --text: #c3e7ef;
     --text-h: #f3f4f6;
-    --bg: #16171d;
+    --bg: linear-gradient(to bottom, #000d3d 0%, #1a478a 40%, #7a98b9 80%, #e6ccb2 100%);;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -51,7 +54,7 @@
 }
 
 #root {
-  width: 1126px;
+  width: 1500px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -95,15 +98,11 @@ p {
   margin: 0;
 }
 
-code,
-.counter {
+code {
   font-family: var(--mono);
   display: inline-flex;
   border-radius: 4px;
   color: var(--text-h);
-}
-
-code {
   font-size: 15px;
   line-height: 135%;
   padding: 4px 8px;
