@@ -25,7 +25,7 @@ export default function Home() {
         <p className="text-sm uppercase tracking-widest opacity-40">For the weird, inconsistent, hard-to-predict days</p>
         
         <h1 className="text-6xl md:text-8xl font-semibold leading-none tracking-tight">
-          Not every day is a grind day...
+          Not every day is a grind day
         </h1>
 
         <p className="text-xl opacity-50 max-w-lg leading-relaxed">
