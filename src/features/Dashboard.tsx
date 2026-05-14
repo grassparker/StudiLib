@@ -24,7 +24,6 @@ export default function Dashboard() {
   const navigate = useNavigate()
   const MODES = ['Grind', 'Chill', 'Creative', 'Sportive', 'Social']
   const [focusTask, setFocusTask] = useState<string | null>(null)
-  const [userId, setUserId] = useState('')
   const [completedCount, setCompletedCount] = useState(0)
   const [focusCount, setFocusCount] = useState(0)
   const [totalFocusMinutes, setTotalFocusMinutes] = useState(0)
@@ -72,8 +71,13 @@ export default function Dashboard() {
         setAiContext(profileData.ai_context)
         const taskList = taskData?.map(t => t.content) || []
         setTasks(taskList)
-        setUserId(session.user.id)
         setCompletedCount(Completed || 0)
+
+        if (focusData) {
+          setFocusCount(focusData.length)
+          const totalMins = focusData.reduce((acc, curr) => acc + (curr.duration_minutes || 0), 0)
+          setTotalFocusMinutes(totalMins)
+        }
         // Fetch AI only once on mount
         fetchAI(taskList, 'Chill', profileData.ai_context, profileData.name)
       }

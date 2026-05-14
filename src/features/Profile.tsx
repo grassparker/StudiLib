@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from '../supabase'
 import { useNavigate } from 'react-router-dom'
 
-const MODES = ['Grind', 'Chill', 'Creative', 'YouTube', 'Social', 'Errands']
+const MODES = ['Grind', 'Chill', 'Creative', 'Sportive', 'Social']
 
 export default function Profile() {
   const [name, setName] = useState('')
